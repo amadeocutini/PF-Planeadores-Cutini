@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <!--===== BASIC =====-->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <title>¡Vení a volar con nosotros! | Club de Planeadores Mar del Plata</title>
+
+        <!--===== CSS =====-->
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!--===== BOOTSTRAP =====-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container mt-5">
+                  <a class="navbar-brand" href="index.html">
+                        <img class="ms-lg-4 ms-xl-1 ms-xxl-5" src="assets/img/planeadorNav.svg" alt="Logo">
+                  </a>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 mt-2">
+                                <li class="nav-item inicio">
+                                    <a class="nav-link mx-lg-3 active" aria-current="page" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-3" href="https://www.instagram.com/planeadoresmdp" target="_blank">Nosotros ↗</a>
+                                </li>
+                                <li class="nav-item dropdown"> <!-- DROPDOWN DEMOSTRATIVO HECHO CON BOOTSTRAP. EN PRÓXIMAS ENTREGAS, SERÁ DESARROLLADO CON CSS NATIVO -->
+                                    <a class="nav-link dropdown-toggle mx-lg-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                        Cursos 
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24">
+                                            <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                                        </svg> -->
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="piloto.html" class="dropdown-item">Piloto de Planeador</a>
+                                        </li>
+                                        <li>
+                                            <a href="instructor.html" class="dropdown-item">Instructor de vuelo</a>
+                                        </li>
+                                        <li>
+                                            <a href="remolcador.html" class="dropdown-item">Piloto remolcador</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-3" href="flota.html">Flota</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-3" href="#">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                  </div>
+                  <!-- RESERVAS -->
+                  <a class="d-none d-lg-inline reservas-navbar-btn" href="https://www.calendly.com/planeadoresmdp/vuelodebautismo" target="_blank">
+                        Mi reserva
+                  </a>
+                  <!-- NAVBAR TOGGLER -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+
+        <main class="container mt-5">
+            <!-- ENCABEZADO -->
+            <section class="row justify-content-center">
+                <article class="col-11 col-sm-12 col-lg-10 text-center">
+                    <div>
+                        <p class="home-text">Mar del Plata, Argentina 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill mb-1" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                            </svg> <!-- VER SI DEJAR SVG -->
+                        </p>
+                        <h1 class="home-title">Nuestra flota</h1>
+                        <p class="home-description">
+                            Volando y formando pilotos en la ciudad desde 1936
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="row justify-content-center">
+                <div class="col-10">
+                    <div class="logos native-carousel">
+                        <div class="logos-slide">
+                            <a class="native-carousel-link" href="https://www.lacapitalmdp.com/volar-sin-motor-por-mar-del-plata-una-aventura-unica-y-fascinante/" target="_blank">
+                                <img src="assets/img/lacapital.png">
+                            </a>
+                            <a class="native-carousel-link" href="https://www.0223.com.ar/nota/2024-4-28-10-14-0-como-un-pajaro-un-dia-de-vuelo-en-el-club-de-planeadores-de-mar-del-plata" target="_blank">
+                                <img src="assets/img/0223.png">
+                            </a>
+                            <a class="native-carousel-link" href="https://www.c5n.com" target="_blank">
+                                <img src="assets/img/c5n.png" height="55">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row justify-content-center">
+                <article class="col-11 col-sm-12 col-lg-10 article first-article" id="bautismos">
+                    <div class="article-image">
+                        <img src="" class="img-fluid" alt="">
+                    </div>
+                    <div class="article-body">
+                        <h2 class="article-title">.</h2>
+                    </div>
+                </article>
+            </section>
+
+            <!-- FOTOS -->
+
+            <section class="row justify-content-center mt-3 mb-5">
+                <article class="col-11 col-sm-12 col-lg-10 article dudas-article" id="dudas">
+                    <div class="article-body">
+                        <h2 class="article-title d-inline">¡Mirá fotos!</h2>
+                        <a class="contacto-btn float-end me-5 mt-3" href="https://www.instagram.com/planeadoresmdp" target="_blank">Instagram</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+
+        <!-- FOOTER -->
+            
+        <footer class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-6"> 
+                    <img src="assets/img/planeadorNav.svg" height="60" alt="Logo">
+                </div>
+                <div class="col-2">
+                    <p>Lorem ipsum</p>
+                    <ul class="lista-footer">
+                        <li>
+                            <a href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <p>Lorem ipsum</p>
+                    <ul class="lista-footer">
+                        <li>
+                            <a href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-12 col-lg-10 mb-3">
+                    <hr>
+                    <div class="d-inline">
+                        <p class="d-inline text-muted">© 2024 <span class="d-none d-sm-inline">Club de</span> Planeadores Mar del Plata</p>
+                        <a class="social-icons float-end ms-1" href="https://www.facebook.com/profile.php?id=100092691327047" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                        </a>
+                        <a class="social-icons float-end me-1" href="https://www.instagram.com/planeadoresmdp" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- SCRIPTS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
