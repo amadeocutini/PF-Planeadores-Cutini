@@ -235,7 +235,7 @@ body {
     padding: 147px 0px 115px 127px;
 }
 
-.dudas-article {
+.fotos-article {
     padding-top: 80px;
     background-color: var(--white);
 }
@@ -264,7 +264,7 @@ body {
 
 .second-article {
     background-color: var(--black-bg);
-    background-image: url(assets/img/airplane-bg.png);
+    background-image: url(../assets/img/airplane-bg.webp);
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -285,7 +285,7 @@ body {
 
 .third-article {
     background-color: var(--aqua-bg);
-    background-image: url(assets/img/clouds-bg.png);
+    background-image: url(../assets/img/clouds-bg.webp);
     background-repeat: no-repeat;
     background-position: top right;
     color: var(--black);
@@ -342,7 +342,7 @@ body {
     line-height:22.4px;
 }
 
-#dudas .article-title {
+.fotos-article .article-title {
     color: var(--black)
 }
 
