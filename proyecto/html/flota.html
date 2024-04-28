@@ -5,12 +5,12 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
         <title>¡Vení a volar con nosotros! | Club de Planeadores Mar del Plata</title>
 
         <!--===== CSS =====-->
 
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../css/styles.css">
 
         <!--===== BOOTSTRAP =====-->
 
@@ -20,8 +20,8 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container mt-5">
-                  <a class="navbar-brand" href="index.html">
-                        <img class="ms-lg-4 ms-xl-1 ms-xxl-5" src="assets/img/planeadorNav.svg" alt="Logo">
+                  <a class="navbar-brand" href="../index.html">
+                        <img class="ms-lg-4 ms-xl-1 ms-xxl-5" src="../assets/img/planeadorNav.svg" alt="Logo">
                   </a>
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
@@ -30,18 +30,13 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 mt-2">
                                 <li class="nav-item inicio">
-                                    <a class="nav-link mx-lg-3 active" aria-current="page" href="index.html">Inicio</a>
+                                    <a class="nav-link mx-lg-3 active" aria-current="page" href="../index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link mx-lg-3" href="https://www.instagram.com/planeadoresmdp" target="_blank">Nosotros ↗</a>
                                 </li>
-                                <li class="nav-item dropdown"> <!-- DROPDOWN DEMOSTRATIVO HECHO CON BOOTSTRAP. EN PRÓXIMAS ENTREGAS, SERÁ DESARROLLADO CON CSS NATIVO -->
-                                    <a class="nav-link dropdown-toggle mx-lg-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                                        Cursos 
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24">
-                                            <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
-                                        </svg> -->
-                                    </a>
+                                <li class="nav-item dropdown"> 
+                                    <a class="nav-link dropdown-toggle mx-lg-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos</a>
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a href="piloto.html" class="dropdown-item">Piloto de Planeador</a>
@@ -55,10 +50,10 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link mx-lg-3" href="flota.html">Flota</a>
+                                    <a class="nav-link mx-lg-3" href="#">Flota</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link mx-lg-3" href="#">Contacto</a>
+                                    <a class="nav-link mx-lg-3" href="../index.html#contacto">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -78,14 +73,13 @@
         <!-- MAIN -->
 
         <main class="container mt-5">
-            <!-- ENCABEZADO -->
             <section class="row justify-content-center">
                 <article class="col-11 col-sm-12 col-lg-10 text-center">
                     <div>
                         <p class="home-text">Mar del Plata, Argentina 
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill mb-1" viewBox="0 0 16 16">
                                 <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-                            </svg> <!-- VER SI DEJAR SVG -->
+                            </svg> 
                         </p>
                         <h1 class="home-title">Nuestra flota</h1>
                         <p class="home-description">
@@ -100,13 +94,13 @@
                     <div class="logos native-carousel">
                         <div class="logos-slide">
                             <a class="native-carousel-link" href="https://www.lacapitalmdp.com/volar-sin-motor-por-mar-del-plata-una-aventura-unica-y-fascinante/" target="_blank">
-                                <img src="assets/img/lacapital.png">
+                                <img src="../assets/img/lacapital.png">
                             </a>
                             <a class="native-carousel-link" href="https://www.0223.com.ar/nota/2024-4-28-10-14-0-como-un-pajaro-un-dia-de-vuelo-en-el-club-de-planeadores-de-mar-del-plata" target="_blank">
-                                <img src="assets/img/0223.png">
+                                <img src="../assets/img/0223.png">
                             </a>
                             <a class="native-carousel-link" href="https://www.c5n.com" target="_blank">
-                                <img src="assets/img/c5n.png" height="55">
+                                <img src="../assets/img/c5n.png" height="55">
                             </a>
                         </div>
                     </div>
@@ -114,10 +108,10 @@
             </section>
 
             <section class="row justify-content-center">
-                <article class="col-11 col-sm-12 col-lg-10 article first-article" id="bautismos">
-                    <div class="article-image">
+                <article class="col-11 col-sm-12 col-lg-10 article first-article">
+                    <!-- <div class="article-image">
                         <img src="" class="img-fluid" alt="">
-                    </div>
+                    </div> -->
                     <div class="article-body">
                         <h2 class="article-title">.</h2>
                     </div>
@@ -127,7 +121,7 @@
             <!-- FOTOS -->
 
             <section class="row justify-content-center mt-3 mb-5">
-                <article class="col-11 col-sm-12 col-lg-10 article dudas-article" id="dudas">
+                <article class="col-11 col-sm-12 col-lg-10 article dudas-article">
                     <div class="article-body">
                         <h2 class="article-title d-inline">¡Mirá fotos!</h2>
                         <a class="contacto-btn float-end me-5 mt-3" href="https://www.instagram.com/planeadoresmdp" target="_blank">Instagram</a>
@@ -136,13 +130,12 @@
             </section>
         </main>
 
-
         <!-- FOOTER -->
             
         <footer class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-6"> 
-                    <img src="assets/img/planeadorNav.svg" height="60" alt="Logo">
+                    <img src="../assets/img/planeadorNav.svg" height="60" alt="Logo">
                 </div>
                 <div class="col-2">
                     <p>Lorem ipsum</p>
