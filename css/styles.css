@@ -166,6 +166,10 @@ body {
     padding: 25px 0px 115px 105px
 }
 
+.contacto-article .article-body {
+    padding: 25px 100px 115px 100px
+}
+
 .number {
     margin-top: -85px !important;
     font-weight: 700;
@@ -185,6 +189,10 @@ body {
 
 .upper-text, .article-title {
     font-weight: var(--f600);
+}
+
+.first-article .upper-text {
+    color: #75BDFF;
 }
 
 .second-article .upper-text {
@@ -221,23 +229,20 @@ body {
 
 .first-article {
     background-color: var(--blue-bg);
-    /* background-image: url(./assets/img/bautismo-bg.svg); 
-    background-repeat: no-repeat;
-    background-position: right; */
-    
 } 
 
-.fifth-article {
-    padding: 147px 0px 0px 127px;
-}
-
-.first-article, .fourth-article, .sixth-article {
+.fourth-article, .sixth-article {
     padding: 147px 0px 115px 127px;
 }
 
-.fotos-article {
-    padding-top: 80px;
-    background-color: var(--white);
+.fifth-article {
+    padding: 147px 0px 0px 0px;
+}
+
+.contacto-article {
+    background-image: url(../assets/img/contacto-bg.webp);
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 /* SMALL ARTICLES */ 
@@ -275,12 +280,6 @@ body {
 
 .article-description {
     text-decoration: none;
-}
-
-.second-article .article-description {
-    background: linear-gradient(93deg, #14EDE0 27.16%, #006eff 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .third-article {
@@ -342,10 +341,6 @@ body {
     line-height:22.4px;
 }
 
-.fotos-article .article-title {
-    color: var(--black)
-}
-
 .contacto-btn {
     font-weight: 500;
 }
@@ -357,6 +352,15 @@ body {
     border: none !important;
 }
 
+.fotos-article {
+    background-color: var(--white);
+    padding: 80px 10px 0px;
+}
+
+.fotos-article .article-title {
+    color: var(--black);
+}
+
 /* CONTACTO */
 
 .fifth-article {
@@ -364,8 +368,15 @@ body {
     color: var(--black);
 }
 
+.contacto-article input, .contacto-article textarea {
+    border-radius: 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
 .article-form { 
-    width: 90%;
+    width: 100%;
 }
 
 label {
@@ -388,7 +399,7 @@ label {
 
 .submit button {
     border: 2px solid #0040ff;
-    color: #0040ff;
+    color: var(--blue-bg);
     width: 100%;
     font-weight: 600;
     padding:.75rem 2.5rem;
@@ -398,7 +409,7 @@ label {
 
 .submit button:hover {
     color:#fff;
-    background-color:#0040ff;
+    background-color:var(--blue-bg);
 }
 
 .lista-footer {
@@ -419,15 +430,9 @@ label {
 
 @media (min-width: 1400px) {
     .inicio {
-        margin-left: 73px;
+        margin-left: 77px;
     }
 }
-
-/* @media (max-width: 1199px) {
-    .first-article .upper-text,.first-article .article-title {
-        text-align: center;
-    }
-} */
 
 @media (min-width: 992px) {
     .home-text {
@@ -437,8 +442,8 @@ label {
 
 @media (min-width: 1200px) and (max-width: 1399px) {
     .inicio {
-        margin-left: 80px;
-    }   
+        margin-left: 89px;
+    }
     .reservas-navbar-btn {
         margin-right: -25px;
     }
@@ -449,7 +454,7 @@ label {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .inicio {
-        margin-left: 55px;
+        margin-left: 67px;
     }
     .reservas-navbar-btn {
         margin-right: -30px;
@@ -481,6 +486,31 @@ label {
     }
 }
 
+.first-article {
+    background-image: url(../assets/img/bautismos-bg.webp); 
+    background-repeat: no-repeat;
+    background-position: top right; 
+}
+@media screen and (min-width: 992px) {
+    .first-article {
+        padding: 147px 0px 115px 127px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .first-article .article-body {
+        padding: 90px 0px 127px 90px;
+    }
+    
+    .first-article .number {
+        margin-top: 59px !important;
+        position: absolute;
+    }
+    .first-article .upper-text {
+        margin-top: 120px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .home-title {
         line-height: 144px;
@@ -488,11 +518,17 @@ label {
     .native-carousel {
         margin: 100px 0px 125px 0px;
     }
+    .home-description {
+        margin-bottom: 65px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .home-title {
         font-size: 84px;
+    }
+    .home-description {
+        font-size: 21.5px;
     }
     .second-article .article-title {
         font-size: 50px;
@@ -511,29 +547,26 @@ label {
         justify-content: center;
         width: 90%;
     }
-}
-
-@media screen and (max-width: 767px) {
     .native-carousel {
         margin: 80px 0px 80px 0px;
     }
     .first-article .article-title {
         font-size: 60px;
     }
-    .first-article .article-description {
-        font-size: 18px;
-    }
+    
 }
 
 @media screen and (min-width: 576px) {
     .hero-section {
         margin-top: 30px !important;
     }
-    .home-description {
-        margin-bottom: 65px;
-    }
     .article-link {
         padding-left: 105px;
+    }
+    .second-article .article-description {
+        background: linear-gradient(93deg, #14EDE0 27.16%, #006eff 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .second-article .piloto-br {
         display: none;
@@ -552,7 +585,10 @@ label {
 
 @media screen and (max-width:575px) {
     .hero-section {
-        margin-top: 30px !important;
+        margin-top: 40px !important;
+    }
+    .home-title {
+        margin-top: -13px;
     }
     .home-btn {
         margin-left: 9.5%;
@@ -561,8 +597,14 @@ label {
     .native-carousel {
         margin: 50px 0px 70px 0px;
     }
+    .first-article .article-body {
+        padding: 110px 0px 100px 50px;
+    }
     .article-body {
         padding: 25px 0px 100px 50px;
+    }
+    .contacto-article .article-body {
+        padding: 25px 50px 100px 50px;
     }
     .second-article .article-title {
         font-size: 40px;
@@ -571,6 +613,7 @@ label {
         font-size: 20px;
     }
     .second-article .article-description {
+        color: var(--blue);
         font-size: 18px;
     }
     .third-article .article-title {
@@ -588,11 +631,13 @@ label {
     .main-image {
         margin-top: -30px;
     }
-}
-
-@media screen and (max-width: 576px) {
     .br {
         display: none !important;
+    }
+    .submit button {
+        background-color: var(--blue-bg);
+        border: none;
+        color: var(--white);
     }
 }
 
@@ -616,44 +661,30 @@ label {
     }
 }
 
-@media screen and (max-width:470px) {
-    .first-article .article-description {
-        font-size: 16px;
+@media screen and (min-width: 376px) {
+    .mdq-br {
+        display: none;
     }
 }
 
-@media (min-width: 420px) and (max-width: 470px) {
-    .first-article .article-title {
-        font-size: 47px;
+@media (min-width: 350px) and (max-width: 575px) {
+    .first-article .article-description {
+        font-size: 24px;
     }
 }
 
-@media screen and (max-width:440px) {
-    .first-article .article-description {
-        font-size: 15px;
-    }
-}
-@media screen and (max-width:410px) {
-    .first-article .article-description {
+@media screen and (max-width: 350px) {
+    .text-muted {
         font-size: 14px;
     }
 }
 
-@media (min-width: 350px) and (max-width: 420px) {
-    .first-article .article-title {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 350px) {
+@media (min-width: 320px) and (max-width: 375px) {
     .first-article .upper-text {
         font-size: 18px;
     }
-    .first-article .article-title {
-        font-size: 35px;
-    }
-    .text-muted {
-        font-size: 14px;
+    .first-article .article-description {
+        font-size: 18px;
     }
 }
 
