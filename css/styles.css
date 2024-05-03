@@ -42,7 +42,7 @@ body {
     line-height: 24px;
 }
 
-.reservas-navbar-btn, .contacto-btn {
+.reservas-navbar-btn {
     background-color: var(--blue-bg);
     text-decoration: none;
     border-radius: 16px;
@@ -55,11 +55,11 @@ body {
     padding: 17px 35px;
 }
 
-.reservas-navbar-btn, .video-btn, .reservas-home-btn { 
+.reservas-navbar-btn, .hero-section__btn--video, .hero-section__btn-reservas { 
     transition: opacity .3s;
 }
 
-.reservas-navbar-btn:hover, .video-btn:hover, .reservas-home-btn:hover {
+.reservas-navbar-btn:hover, .hero-section__btn--video:hover, .hero-section__btn-reservas:hover {
     opacity: 0.7;
 }
 
@@ -69,7 +69,7 @@ body {
 
 /* HOME */
 
-.home-title {
+.hero-section__title {
     color: var(--black);
     font-size: 120px;
     font-weight:700;
@@ -77,13 +77,13 @@ body {
     letter-spacing:-7.2px;
 }
 
-.home-text, .home-description {
+.hero-section__text, .hero-section__description {
     font-size: 22px;
     font-weight: 500;
     line-height: 30.8px;
 }
 
-.home-btn {
+.hero-section__btn {
     border-radius: 16px;
     text-decoration: none;
     font-weight: 600;
@@ -92,30 +92,17 @@ body {
     padding: 22px 30px;
 }
 
-.video-btn {
+.hero-section__btn--video {
     background-color: var(--blue-bg);
     color: #ffffff;
 }
 
-.reservas-home-btn {
+.hero-section__btn-reservas {
     background-color: var(--white);
     color: #101112;
 }
 
 /* SLIDER */
-
-.native-carousel-link {
-    text-decoration: none;
-}
-  
-@keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-}
   
 .logos {
     overflow: hidden;
@@ -140,13 +127,26 @@ body {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #E2E8F1);
 }
   
-.logos-slide {
+.logos__slide {
     display: inline-block;
     animation: 8s slide infinite linear;
 }
+
+.logos__carousel-link {
+    text-decoration: none;
+}
   
-.logos-slide img {
+.logos__slide img {
     margin: 0 40px;
+}
+  
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
 }
 
 /* ARTICLE */
@@ -162,55 +162,55 @@ body {
 
 /* ARTICLE CONTENT */
 
-.article-body {
+.article__body {
     padding: 25px 0px 115px 105px
 }
 
-.contacto-article .article-body {
+.article__contacto .article__body {
     padding: 25px 100px 115px 100px
 }
 
-.number {
+.article__number {
     margin-top: -85px !important;
     font-weight: 700;
 }
 
-.number, .upper-text {
+.article__number, .article__upper-text {
     font-size: 22px;
     line-height: 30.8px;
 }
 
-.article-title {
+.article__title {
     font-size: 70px;
     letter-spacing: -2.1px;
     line-height: 70px;
     margin: 20px 0px 30px 0px;
 }
 
-.upper-text, .article-title {
+.article__upper-text, .article__title {
     font-weight: var(--f600);
 }
 
-.first-article .upper-text {
+.article__first .article__upper-text {
     color: #75BDFF;
 }
 
-.second-article .upper-text {
+.article__second .article__upper-text {
     color: var(--blue);
 }
 
-.article-description {
+.article__description {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.2px;
     line-height: 28px;
 }
 
-.first-article .article-description {
+.article__first .article__description {
     color: var(--white);
 }
 
-.article-link a {
+.article__link a {
     color: var(--blue-bg);
     text-decoration: none;
     background-color: #ffffff;
@@ -219,27 +219,21 @@ body {
     font-weight: 600;
 }
 
-.article-image {
-    position: absolute;
-    margin-left: 28%;
-    margin-top: -4.4%;
-}
-
 /* ARTICLES */
 
-.first-article {
+.article__first {
     background-color: var(--blue-bg);
 } 
 
-.fourth-article, .sixth-article {
+.article__fourth, .article__sixth {
     padding: 147px 0px 115px 127px;
 }
 
-.fifth-article {
+.article__fifth {
     padding: 147px 0px 0px 0px;
 }
 
-.contacto-article {
+.article__contacto {
     background-image: url(../assets/img/contacto-bg.webp);
     background-repeat: no-repeat;
     background-position: top right;
@@ -259,30 +253,30 @@ body {
     }
 }
 
-.small-articles .upper-text {
+.small-articles .article__upper-text {
     margin-top: 120px;
 }
 
-.small-articles .article-title {
+.small-articles .article__title {
     font-size: 60px;
 }
 
-.second-article {
+.article__second {
     background-color: var(--black-bg);
     background-image: url(../assets/img/airplane-bg.webp);
     background-repeat: no-repeat;
     background-position: top right;
 }
 
-.second-article .number {
+.article__second .article__number {
     color: var(--gray);
 }
 
-.article-description {
+.article__description {
     text-decoration: none;
 }
 
-.third-article {
+.article__third {
     background-color: var(--aqua-bg);
     background-image: url(../assets/img/clouds-bg.webp);
     background-repeat: no-repeat;
@@ -290,21 +284,21 @@ body {
     color: var(--black);
 } 
 
-.third-article .article-description {
+.article__third .article__description {
     color: var(--black);
 }
 
 /* CURSOS */
 
-.fourth-article {
+.article__fourth {
     background-color: var(--black-bg);
 }
 
-.fourth-article .number {
+.article__fourth .number {
     color: var(--gray);
 }
 
-.article-title span:first-child {
+.article__title span:first-child {
     background: linear-gradient(93deg, #14EDE0 33.16%, #0057FF 63.53%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -312,20 +306,18 @@ body {
 
 /* DROPDOWN PENDIENTE */
 
-.cursos-dropdown:hover {
+.article__cursos--dropdown:hover {
     cursor: pointer;
 }
 
-
-
 /* FIN DROPDOWN */
 
-.call-to-action h2 {
+.article__call-to-action h2 {
     font-size: 70px;
     font-weight: 600;
 }
 
-.empeza {
+.article__btn--empeza {
     background-color:#0040ff;
     text-decoration: none;
     border-radius: 16px;
@@ -335,14 +327,10 @@ body {
     padding:26px 34px;
 }
 
-.disclaimer {
+.article__disclaimer {
     color:#4a5271;
     letter-spacing:-0.16px;
     line-height:22.4px;
-}
-
-.contacto-btn {
-    font-weight: 500;
 }
 
 /* FLOTA */
@@ -357,25 +345,25 @@ body {
     padding: 80px 10px 0px;
 }
 
-.fotos-article .article-title {
+.fotos-article .article__title {
     color: var(--black);
 }
 
 /* CONTACTO */
 
-.fifth-article {
+.article__fifth {
     background-color: var(--white);
     color: var(--black);
 }
 
-.contacto-article input, .contacto-article textarea {
+.article__contacto input, .article__contacto textarea {
     border-radius: 0px;
     border-top: none;
     border-right: none;
     border-left: none;
 }
 
-.article-form { 
+.article__form { 
     width: 100%;
 }
 
@@ -412,18 +400,9 @@ label {
     background-color:var(--blue-bg);
 }
 
-.lista-footer {
-    list-style: none;
-}
-
-.mail-to, .social-icons {
+.social-icons {
     text-decoration: none;
     color: #000000;
-}
-
-.share-icons a {
-    text-decoration: none !important;
-    color:#000000;
 }
 
 /* MEDIA QUERIES */
@@ -435,7 +414,7 @@ label {
 }
 
 @media (min-width: 992px) {
-    .home-text {
+    .hero-section__text {
         margin-top: 75px;
     }
 }
@@ -447,7 +426,7 @@ label {
     .reservas-navbar-btn {
         margin-right: -25px;
     }
-    .home-title {
+    .hero-section__title {
         font-size: 105px;
     }
 }
@@ -461,96 +440,89 @@ label {
     }
 }
 
-@media screen and (max-width:1399px) {
-    .article-image {
-        margin-left: 430px;
-        margin-top: -70px;
-    }
-}
-
 @media (min-width: 1200px) and (max-width: 1399px) {
-    .small-articles .article-title {
+    .small-articles .article__title {
         font-size: 53px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .home-title {
+    .hero-section__title {
         font-size: 92px;
     }
-    .small-articles .article-title {
+    .small-articles .article__title {
         font-size: 41px;
     }
-    .small-articles .article-title, .small-articles .article-description {
+    .small-articles .article__title, .small-articles .article__description {
         padding-right: 50px;
     }
 }
 
-.first-article {
+.article__first {
     background-image: url(../assets/img/bautismos-bg.webp); 
     background-repeat: no-repeat;
     background-position: top right; 
 }
 @media screen and (min-width: 992px) {
-    .first-article {
+    .article__first {
         padding: 147px 0px 115px 127px;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .first-article .article-body {
+    .article__first .article__body {
         padding: 90px 0px 127px 90px;
     }
     
-    .first-article .number {
+    .article__first .article__number {
         margin-top: 59px !important;
         position: absolute;
     }
-    .first-article .upper-text {
+    .article__first .article__upper-text {
         margin-top: 120px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .home-title {
+    .hero-section__title {
         line-height: 144px;
     }
-    .native-carousel {
+    .logos__carousel {
         margin: 100px 0px 125px 0px;
     }
-    .home-description {
+    .hero-section__description {
         margin-bottom: 65px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .home-title {
+    .hero-section__title {
         font-size: 84px;
     }
-    .home-description {
+    .hero-section__description {
         font-size: 21.5px;
     }
-    .second-article .article-title {
+    .article__second .article__title {
         font-size: 50px;
     }
-    .third-article .article-title {
+    .article__third .article__title {
         font-size: 55px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .home-title {
+    .hero-section__title {
         line-height: 70px;
     }
-    .home-btn {
+    .hero-section__btn {
         display: flex;
         justify-content: center;
         width: 90%;
     }
-    .native-carousel {
+    .logos__carousel {
         margin: 80px 0px 80px 0px;
     }
-    .first-article .article-title {
+    .article__first .article__title {
         font-size: 60px;
     }
     
@@ -560,25 +532,25 @@ label {
     .hero-section {
         margin-top: 30px !important;
     }
-    .article-link {
+    .article__link {
         padding-left: 105px;
     }
-    .second-article .article-description {
+    .article__second .article__description {
         background: linear-gradient(93deg, #14EDE0 27.16%, #006eff 100%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .second-article .piloto-br {
+    .article__second .article__piloto--br {
         display: none;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .home-title {
+    .hero-section__title {
         font-size: 60px;
         letter-spacing: -5px;
     }
-    .call-to-action h2 {
+    .article__call-to-action h2 {
         font-size: 55px;
     }
 }
@@ -587,52 +559,49 @@ label {
     .hero-section {
         margin-top: 40px !important;
     }
-    .home-title {
+    .hero-section__title {
         margin-top: -13px;
     }
-    .home-btn {
+    .hero-section__btn {
         margin-left: 9.5%;
         width: 80%;
     }
-    .native-carousel {
+    .logos__carousel {
         margin: 50px 0px 70px 0px;
     }
-    .first-article .article-body {
+    .article__first .article__body {
         padding: 110px 0px 100px 50px;
     }
-    .article-body {
+    .article__body {
         padding: 25px 0px 100px 50px;
     }
-    .contacto-article .article-body {
+    .article__contacto .article__body {
         padding: 25px 50px 100px 50px;
     }
-    .second-article .article-title {
+    .article__second .article__title {
         font-size: 40px;
     }
-    .second-article .upper-text, .third-article .upper-text {
+    .article__second .article__upper-text, .article__third .article__upper-text {
         font-size: 20px;
     }
-    .second-article .article-description {
+    .article__second .article__description {
         color: var(--blue);
         font-size: 18px;
     }
-    .third-article .article-title {
+    .article__third .article__title {
         font-size: 43.5px;
     }
-    .fourth-article .article-title {
+    .article__fourth .article__title {
         font-size: 45px;
     }
-    .disclaimer {
+    .article__disclaimer {
         font-size: 13.9px;
     }
     .text-muted {
         font-size: 15.5px;
     }
-    .main-image {
+    .article__main-image {
         margin-top: -30px;
-    }
-    .br {
-        display: none !important;
     }
     .submit button {
         background-color: var(--blue-bg);
@@ -642,7 +611,7 @@ label {
 }
 
 @media screen and (max-width:549px) {
-    .second-article .article-title {
+    .article__second .article__title {
         font-size: 40px;
     }
 }
@@ -650,25 +619,25 @@ label {
 @media screen and (max-width:549px) {}
 
 @media (min-width: 550px) and (max-width:575px) {
-    .second-article .piloto-br {
+    .article__second .article__piloto--br {
         display: none;
     }
 }
 
 @media (min-width: 470px) and (max-width: 500px) {
-    .first-article .article-title {
+    .article__first .article__title {
         font-size: 55px;
     }
 }
 
 @media screen and (min-width: 376px) {
-    .mdq-br {
+    .article__mdq--br {
         display: none;
     }
 }
 
 @media (min-width: 350px) and (max-width: 575px) {
-    .first-article .article-description {
+    .article__first .article__description {
         font-size: 24px;
     }
 }
@@ -680,120 +649,120 @@ label {
 }
 
 @media (min-width: 320px) and (max-width: 375px) {
-    .first-article .upper-text {
+    .article__first .article__upper-text {
         font-size: 18px;
     }
-    .first-article .article-description {
+    .article__first .article__description {
         font-size: 18px;
     }
 }
 
 @media (max-width:350px) {
-    .second-article .article-title {
+    .article__second .article__title {
         font-size: 36px;
     }
 }
 
 @media (min-width: 542px) and (max-width: 575px) {
-    .home-title {
+    .hero-section__title {
         font-size: 55px;  
         letter-spacing: -4px; 
     }
 }
 
 @media (min-width: 481px) and (max-width: 541px) {
-    .home-title {
+    .hero-section__title {
         font-size: 50px;  
         letter-spacing: -4px; 
     }
 }
 
 @media (min-width: 394px) and (max-width: 480px) {
-    .home-title {
+    .hero-section__title {
         font-size: 45px; 
         letter-spacing: -4px; 
     }
 }
 
 @media (min-width: 333px) and (max-width: 393px) {
-    .home-title {
+    .hero-section__title {
         font-size: 35px; 
         letter-spacing: -2px; 
     }
 }
 
 @media (min-width: 320px) and (max-width: 332px) {
-    .home-title {
+    .hero-section__title {
         font-size: 33px; 
         letter-spacing: -2px; 
     }
 }
 
 @media screen and (max-width: 475px) {
-    .fourth-article .article-title {
+    .article__fourth .article__title {
         font-size: 40px;
     }
 }
 
 @media screen and (min-width: 440px) {
-    .fourth-article .roadmap-br {
+    .article__fourth .article__roadmap--br {
         display: none;
     }
-    .roadmap-span {
+    .article__roadmap-span {
         display: block;
     }
 }
 
 @media screen and (max-width: 439px) {
-    .roadmap-span {
+    .article__roadmap-span {
         display: inline;
     }
 }
 
 @media screen and (max-width: 430px) {
-    .fifth-article .article-title {
+    .article__fifth .article__title {
         font-size: 60px;
     }
 }
 
 @media screen and (max-width: 380px) {
-    .fourth-article .article-title {
+    .article__fourth .article__title {
         font-size: 35px;
     }
-    .fifth-article .article-title {
+    .article__fifth .article__title {
         font-size: 55px;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .call-to-action h2 {
+    .article__call-to-action h2 {
         font-size: 50px;
     }
 }
 
 @media screen and (max-width: 510px) {
-    .call-to-action h2 {
+    .article__call-to-action h2 {
         font-size: 45px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .call-to-action h2 {
+    .article__call-to-action h2 {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .call-to-action h2 {
+    .article__call-to-action h2 {
         font-size: 35px;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .call-to-action h2 {
+    .article__call-to-action h2 {
         font-size: 32px;
     }
-    .fifth-article .article-title {
+    .article__fifth .article__title {
         font-size: 50px;
     }
 }

@@ -1,2 +1,2 @@
-let copy = document.querySelector(".logos-slide").cloneNode(true);
+let copy = document.querySelector(".logos__slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
