@@ -1,0 +1,422 @@
+@use "../utilities/variables";
+
+/*
+
+@mixin article {
+    border-radius: 100px;
+    color: variables.$white;
+    gap:36px;
+    line-height:20px;
+}
+
+*/
+
+.article {
+    // Estilos comunes
+    border-radius: 100px;
+    color: variables.$white;
+    gap:36px;
+    line-height:20px;
+
+    &__body {
+        padding: 25px 0px 115px 105px;
+    }
+
+    &__number {
+        margin-top: -85px !important;
+        font-weight: 700;
+    }
+
+    &__number, &__upper-text {
+        font-size: 22px;
+        line-height: 30.8px;
+    }
+
+    &__title {
+        font-size: 70px;
+        letter-spacing: -2.1px;
+        line-height: 70px;
+        margin: 20px 0px 30px 0px;
+    }
+
+    &__title, &__upper-text {
+        font-weight: variables.$f600;
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -0.2px;
+        line-height: 28px;
+    }
+    
+    &__link a {
+        color: variables.$blue-bg;
+        text-decoration: none;
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 22px 30px;
+        font-weight: 600;
+    }
+
+    // First Article
+
+    &__first {
+        background-color: variables.$blue-bg;
+    }
+
+    &__first &__upper-text {
+        color: #75BDFF;
+    }
+
+    &__first &__description {
+        color: variables.$white;
+    }
+
+    // Second Article & Third Article (Small Articles)
+
+    .small-articles & {
+        padding: 147px 0px 0px;
+    }
+
+    .small-articles &__upper-text {
+        margin-top: 120px;
+    }
+    
+    .small-articles &__title {
+        font-size: 60px;
+    }
+    
+    &__second {
+        background-color: variables.$black-bg;
+        background-image: url(../assets/img/airplane-bg.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    
+    &__second &__number {
+        color: variables.$gray;
+    }
+    
+    &__description {
+        text-decoration: none;
+    }
+    
+    &__third {
+        background-color: variables.$aqua-bg;
+        background-image: url(../assets/img/clouds-bg.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+        color: variables.$black;
+    } 
+    
+    &__third &__description {
+        color: variables.$black;
+    }
+
+    &__second &__upper-text {
+        color: variables.$blue;
+    }
+
+    // Fourth Article
+
+    &__fourth {
+        background-color: variables.$black-bg;
+        padding: 147px 0px 115px 127px;
+
+        .article__number {
+            color: variables.$gray;
+        }
+
+        .article__title span:first-child {
+            background: linear-gradient(93deg, #14EDE0 33.16%, #0057FF 63.53%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .article__call-to-action h2 {
+            font-size: 70px;
+            font-weight: variables.$f600;
+        }
+
+        .article__disclaimer {
+            color:#4a5271;
+            letter-spacing:-0.16px;
+            line-height:22.4px;
+        }
+    }
+
+    // Fifth Article
+
+    &__fifth {
+        background-color: variables.$white;
+        color: variables.$black;
+        padding: 147px 0px 0px 0px;
+    }
+
+    .home &__fifth {
+        background-image: url(../assets/img/contacto-bg.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+
+        .article__body {
+            padding: 25px 100px 115px 100px;
+        }
+    }
+
+    // Media Queries
+
+    @media (max-width: 1399px) {
+        &__first {
+            background-image: url(../assets/img/bautismos-bg.webp); 
+            background-repeat: no-repeat;
+            background-position: top right; 
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        .small-articles &__title {
+            font-size: 53px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .small-articles &__title {
+            font-size: 41px;
+        }
+        .small-articles &__title, .small-articles &__description {
+            padding-right: 50px;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        // First Article
+        &__first {
+            padding: 147px 0px 115px 127px;
+        }
+
+        // Small Articles
+        .small-articles & {
+            width: 40.8%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__first &__body {
+            padding: 90px 0px 127px 90px;
+        }
+        
+        &__first &__number {
+            margin-top: 59px !important;
+            position: absolute;
+        }
+        &__first &__upper-text {
+            margin-top: 120px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        // Second Article
+        &__second &__title {
+            font-size: 50px;
+        }
+
+        // Third Article
+        &__third &__title {
+            font-size: 55px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__first &__title {
+            font-size: 60px;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+        &__call-to-action h2 {
+            font-size: 55px;
+        }
+    }
+
+    @media screen and (min-width: 576px) {
+        // Article
+        &__link {
+            padding-left: 105px;
+        }
+
+        // Second Article
+        &__second &__description {
+            background: linear-gradient(93deg, #14EDE0 27.16%, #006eff 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &__second &__piloto--br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:575px) {
+        // Article
+        &__body {
+            padding: 25px 0px 100px 50px;
+        }
+        &__disclaimer {
+            font-size: 13.9px;
+        }
+
+        // First Article
+        &__first &__body {
+            padding: 110px 0px 100px 50px;
+        }
+
+        // Second Article
+        &__second &__title {
+            font-size: 40px;
+        }
+        &__second &__upper-text, &__third &__upper-text {
+            font-size: 20px;
+        }
+        &__second &__description {
+            color: variables.$blue;
+            font-size: 18px;
+        }
+        
+        // Third Article 
+        &__third &__title {
+            font-size: 43.5px;
+        }
+
+        // Fourth Article
+        &__fourth &__title {
+            font-size: 45px;
+        }
+
+        // Fifth Article
+        .home &__fifth &__body {
+            padding: 25px 50px 100px 50px;
+        }
+        &__disclaimer {
+            font-size: 13.9px;
+        }
+        &__main-image {
+            margin-top: -30px;
+        }
+        &__call-to-action h2 {
+            font-size: 50px;
+        }
+    }
+
+    @media (min-width: 550px) and (max-width:575px) {
+        &__second &__piloto--br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:549px) {
+        &__second &__title {
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 510px) {
+        &__call-to-action h2 {
+            font-size: 45px;
+        }
+    }
+
+    @media screen and (max-width: 475px) {
+        &__fourth &__title {
+            font-size: 40px;
+        }
+    }
+    
+    @media (min-width: 470px) and (max-width: 500px) {
+        &__first &__title {
+            font-size: 55px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        &__call-to-action h2 {
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (min-width: 440px) {
+        &__fourth &__roadmap--br {
+            display: none;
+        }
+        &__roadmap-span {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 439px) {
+        &__roadmap-span {
+            display: inline;
+        }
+    }
+
+    @media screen and (max-width: 430px) {
+        &__fifth &__title {
+            font-size: 60px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        &__call-to-action h2 {
+            font-size: 35px;
+        }
+    }
+    
+    @media screen and (min-width: 376px) {
+        &__mdq--br {
+            display: none;
+        }
+    }
+    
+    @media (min-width: 350px) and (max-width: 575px) {
+        &__first &__description {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        &__fourth &__title {
+            font-size: 35px;
+        }
+        &__fifth &__title {
+            font-size: 55px;
+        }
+    }
+    
+    @media (min-width: 320px) and (max-width: 375px) {
+        &__first &__upper-text {
+            font-size: 18px;
+        }
+        &__first &__description {
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width:350px) {
+        // Second Article
+        &__second &__title {
+            font-size: 36px;
+        }
+
+        // Fifth Article
+        &__fifth &__title {
+            font-size: 50px;
+        }
+        &__call-to-action h2 {
+            font-size: 32px;
+        }
+        .text-muted {
+            font-size: 14px;
+        }
+    }
+}

@@ -10,13 +10,13 @@
 
         <!--===== CSS =====-->
 
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/main.css">
 
         <!--===== BOOTSTRAP =====-->
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="home">
         <header>
             <nav class="navbar navbar-expand-lg"> 
                 <div class="container mt-5">
@@ -220,26 +220,23 @@
             <!-- CONTACTO -->
 
             <section class="row justify-content-center mt-3 mb-3">
-                <article class="col-11 col-sm-12 col-lg-10 article article__fifth article__contacto" id="contacto">
+                <article class="col-11 col-sm-12 col-lg-10 article article__fifth" id="contacto">
                     <div class="article__number ms-5">
                         <p>05</p>
                     </div>
                     <div class="article__body">
                         <form class="article__form needs-validation" action="https://formspree.io/f/xknaawdk" method="POST" validate>
                             <div class="form-floating">
-                                <input class="form-control" type="text" name="Nombre" id="nombre" pattern="[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s]+" placeholder="Tu nombre" required>
+                                <input class="form-control" type="text" id="nombre" pattern="[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s]+" placeholder="Tu nombre" required>
                                 <label for="nombre">Tu nombre</label> 
-                                <div class="invalid-feedback">Por favor, ingresá o revisá tu nombre</div>
                             </div>
                             <div class="form-floating mt-3">
-                                <input class="form-control" type="email" name="Email" id="correo" placeholder="Tu correo electrónico" required>
+                                <input class="form-control" type="email"id="correo" placeholder="Tu correo electrónico" required>
                                 <label for="correo">Correo electrónico</label> 
-                                <div class="invalid-feedback">Por favor, ingresá un correo válido</div>
                             </div>
                             <div class="form-floating mt-3">
-                                <textarea class="form-control" name="Mensaje" id="mensaje" placeholder="Tu mensaje" required></textarea>
+                                <textarea class="form-control" id="mensaje" placeholder="Tu mensaje" required></textarea>
                                 <label for="mensaje">¡Hola! Me interesa...</label>
-                                <div class="invalid-feedback">¡No te olvides de escribir tu mensaje! 😉</div>
                             </div>
                             <div class="submit mt-3">
                                 <button type="submit" id="submit">ENVIAR</button>

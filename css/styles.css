@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Alliance", sans-serif !important;
-}
-
 @font-face {
     font-family: 'Alliance';
     src: url('./assets/fonts/Degarism\ Studio\ -\ Alliance\ No.1\ Light.otf') format('otf');
@@ -26,6 +20,12 @@
 
     /* FONT STYLES */
     --f600: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Alliance", sans-serif !important;
 }
 
 body {
@@ -166,7 +166,7 @@ body {
     padding: 25px 0px 115px 105px
 }
 
-.article__contacto .article__body {
+.home .article__fifth .article__body {
     padding: 25px 100px 115px 100px
 }
 
@@ -225,7 +225,7 @@ body {
     background-color: var(--blue-bg);
 } 
 
-.article__fourth, .article__sixth {
+.article__fourth {
     padding: 147px 0px 115px 127px;
 }
 
@@ -233,7 +233,7 @@ body {
     padding: 147px 0px 0px 0px;
 }
 
-.article__contacto {
+.home .article__fifth {
     background-image: url(../assets/img/contacto-bg.webp);
     background-repeat: no-repeat;
     background-position: top right;
@@ -333,22 +333,6 @@ body {
     line-height:22.4px;
 }
 
-/* FLOTA */
-
-.card {
-    background-color: #E2E8F1 !important;
-    border: none !important;
-}
-
-.fotos-article {
-    background-color: var(--white);
-    padding: 80px 10px 0px;
-}
-
-.fotos-article .article__title {
-    color: var(--black);
-}
-
 /* CONTACTO */
 
 .article__fifth {
@@ -356,7 +340,7 @@ body {
     color: var(--black);
 }
 
-.article__contacto input, .article__contacto textarea {
+.home .article__fifth input, .home .article__fifth textarea {
     border-radius: 0px;
     border-top: none;
     border-right: none;
@@ -383,7 +367,7 @@ label {
     font-weight: 600;
 }
 
-/* FOOTER */
+/* CONTACTO */
 
 .submit button {
     border: 2px solid #0040ff;
@@ -400,6 +384,8 @@ label {
     background-color:var(--blue-bg);
 }
 
+/* FOOTER */
+
 .social-icons {
     text-decoration: none;
     color: #000000;
@@ -413,9 +399,11 @@ label {
     }
 }
 
-@media (min-width: 992px) {
-    .hero-section__text {
-        margin-top: 75px;
+@media (max-width: 1399px) {
+    .article__first {
+        background-image: url(../assets/img/bautismos-bg.webp); 
+        background-repeat: no-repeat;
+        background-position: top right; 
     }
 }
 
@@ -458,12 +446,10 @@ label {
     }
 }
 
-.article__first {
-    background-image: url(../assets/img/bautismos-bg.webp); 
-    background-repeat: no-repeat;
-    background-position: top right; 
-}
 @media screen and (min-width: 992px) {
+    .hero-section__text {
+        margin-top: 75px;
+    }
     .article__first {
         padding: 147px 0px 115px 127px;
     }
@@ -473,7 +459,6 @@ label {
     .article__first .article__body {
         padding: 90px 0px 127px 90px;
     }
-    
     .article__first .article__number {
         margin-top: 59px !important;
         position: absolute;
@@ -525,7 +510,6 @@ label {
     .article__first .article__title {
         font-size: 60px;
     }
-    
 }
 
 @media screen and (min-width: 576px) {
@@ -575,7 +559,7 @@ label {
     .article__body {
         padding: 25px 0px 100px 50px;
     }
-    .article__contacto .article__body {
+    .home .article__fifth .article__body {
         padding: 25px 50px 100px 50px;
     }
     .article__second .article__title {
@@ -615,8 +599,6 @@ label {
         font-size: 40px;
     }
 }
-
-@media screen and (max-width:549px) {}
 
 @media (min-width: 550px) and (max-width:575px) {
     .article__second .article__piloto--br {
