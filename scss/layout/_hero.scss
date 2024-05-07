@@ -1,0 +1,131 @@
+@use "../utilities/variables";
+
+.hero-section__title {
+    color: variables.$black;
+    font-size: 120px;
+    font-weight:700;
+    grid-area:auto;
+    letter-spacing:-7.2px;
+}
+
+.hero-section__text, .hero-section__description {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30.8px;
+}
+
+.hero-section__btn {
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    gap: 6px;
+    line-height: 20px;
+    padding: 22px 30px;
+}
+
+.hero-section__btn--video {
+    background-color: variables.$blue-bg;
+    color: #ffffff;
+}
+
+.hero-section__btn-reservas {
+    background-color: variables.$white;
+    color: #101112;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .hero-section__title {
+        font-size: 105px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero-section__title {
+        font-size: 92px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-section__text {
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-section__title {
+        font-size: 84px;
+    }
+    .hero-section__description {
+        font-size: 21.5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-section__title {
+        line-height: 144px;
+    }
+    .hero-section__description {
+        margin-bottom: 65px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero-section__title {
+        font-size: 60px;
+        letter-spacing: -5px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .hero-section {
+        margin-top: 30px !important;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .hero-section {
+        margin-top: 40px !important;
+    }
+    .hero-section__title {
+        margin-top: -13px;
+    }
+    .hero-section__btn {
+        margin-left: 9.5%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 542px) and (max-width: 575px) {
+    .hero-section__title {
+        font-size: 55px;  
+        letter-spacing: -4px; 
+    }
+}
+
+@media (min-width: 481px) and (max-width: 541px) {
+    .hero-section__title {
+        font-size: 50px;  
+        letter-spacing: -4px; 
+    }
+}
+
+@media (min-width: 394px) and (max-width: 480px) {
+    .hero-section__title {
+        font-size: 45px; 
+        letter-spacing: -4px; 
+    }
+}
+
+@media (min-width: 333px) and (max-width: 393px) {
+    .hero-section__title {
+        font-size: 35px; 
+        letter-spacing: -2px; 
+    }
+}
+
+@media (min-width: 320px) and (max-width: 332px) {
+    .hero-section__title {
+        font-size: 33px; 
+        letter-spacing: -2px; 
+    }
+}

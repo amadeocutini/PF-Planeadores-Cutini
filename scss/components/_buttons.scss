@@ -1,0 +1,52 @@
+@use "../utilities/variables";
+
+.reservas-navbar-btn {
+    background-color: variables.$blue-bg;
+    text-decoration: none;
+    border-radius: 16px;
+    color: variables.$white;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 10px;
+    line-height: 20px;
+    padding: 17px 35px;
+}
+
+.reservas-navbar-btn, .hero-section__btn--video, .hero-section__btn-reservas { 
+    transition: opacity .3s;
+}
+
+.reservas-navbar-btn:hover, .hero-section__btn--video:hover, .hero-section__btn-reservas:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .reservas-navbar-btn {
+        margin-right: -25px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .reservas-navbar-btn {
+        margin-right: -30px;
+    }
+}
+
+.article__btn--empeza {
+    background-color: variables.$blue-bg;
+    text-decoration: none;
+    border-radius: 16px;
+    color:#ffffff;
+    font-weight: 600;
+    line-height:20px;
+    padding:26px 34px;
+}
+
+@media screen and (max-width:575px) {
+    .submit button {
+        background-color: variables.$blue-bg;
+        border: none;
+        color: variables.$white;
+    }
+}
