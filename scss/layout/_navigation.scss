@@ -1,28 +1,27 @@
 .nav-link {
+    @include font-styles(16px, 500, 24px, -0.16px);
     color:#101112 !important;
-    font-weight: 500 !important;
-    font-size: 16px;
-    letter-spacing: -0.16px;
-    line-height: 24px;
 }
 
 .navbar-toggler {
     border: none !important;
 }
 
-@media (min-width: 1400px) {
+// Media Queries
+
+@include xxl {
     .inicio {
-        margin-left: 77px;
+        margin-left: 73px;
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1399px) {
+@include xl {
     .inicio {
         margin-left: 89px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include lg {
     .inicio {
         margin-left: 67px;
     }
