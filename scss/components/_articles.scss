@@ -28,7 +28,6 @@
 
 .article__first {
     @include colors(map-get($map: $colors, $key: "white"), map-get($map: $backgrounds, $key: "blue"));
-    @include background-image(url(../assets/img/bautismos-bg.webp), no-repeat, top right);
     
     .article__upper-text {
         color: #75BDFF;
@@ -139,6 +138,12 @@
 }
 
 // Media Queries
+
+@media (max-width: 1199px) {
+    .article__first {
+        @include background-image(url(../assets/img/bautismos-bg.webp), no-repeat, top right);
+    }
+}
 
 @include xl {
     .small-articles .article__title {
