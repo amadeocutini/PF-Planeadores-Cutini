@@ -1,0 +1,67 @@
+@mixin margin($m) {
+    margin: $m;
+}
+
+@mixin padding($p) {
+    padding: $p;
+}
+
+@mixin font-styles($fs, $fw, $lh, $ls) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin colors($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}
+
+@mixin border-radius($br) {
+    border-radius: $br;
+}
+
+@mixin background-image($image, $repeat, $position) {
+    background-image: $image;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+
+// Breakpoints 
+
+@mixin xs {
+    @media (max-width: map-get($breakpoints, "sm")) {
+        @content;
+    }   
+}
+
+@mixin sm {
+    @media screen and (min-width: map-get($breakpoints, "sm")) and (max-width: map-get($breakpoints, "md")) {
+        @content;
+    }   
+}
+
+@mixin md {
+    @media screen and (min-width: map-get($breakpoints, "md")) and (max-width: map-get($breakpoints, "lg")) {
+        @content;
+    }   
+}
+
+@mixin lg {
+    @media screen and (min-width: map-get($breakpoints, "lg")) and (max-width: map-get($breakpoints, "xl")) {
+        @content;
+    }   
+}
+
+@mixin xl {
+    @media screen and (min-width: map-get($breakpoints, "xl")) and (max-width: map-get($breakpoints, "xxl")) {
+        @content;
+    }   
+}
+
+@mixin xxl {
+    @media (min-width: map-get($breakpoints, "xxl")) {
+        @content;
+    }   
+}
