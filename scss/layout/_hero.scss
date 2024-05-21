@@ -69,47 +69,15 @@
         margin-top: 40px !important;
     }
     .hero-section__title {
+        font-size: 10vw;
         margin-top: -13px;
+        letter-spacing: -3px;
+    }
+    .hero-section__description {
+        font-size: 4vw;
     }
     .hero-section__btn {
         margin-left: 9.5%;
         width: 80%;
-    }
-}
-
-// PENDIENTE (PREFERIBLEMENTE METER TODO DENTRO DE XS, USANDO % en vez de PX)
-
-@media (min-width: 542px) and (max-width: 575px) {
-    .hero-section__title {
-        font-size: 55px;  
-        letter-spacing: -4px; 
-    }
-}
-
-@media (min-width: 481px) and (max-width: 541px) {
-    .hero-section__title {
-        font-size: 50px;  
-        letter-spacing: -4px; 
-    }
-}
-
-@media (min-width: 394px) and (max-width: 480px) {
-    .hero-section__title {
-        font-size: 45px; 
-        letter-spacing: -4px; 
-    }
-}
-
-@media (min-width: 333px) and (max-width: 393px) {
-    .hero-section__title {
-        font-size: 35px; 
-        letter-spacing: -2px; 
-    }
-}
-
-@media (min-width: 320px) and (max-width: 332px) {
-    .hero-section__title {
-        font-size: 33px; 
-        letter-spacing: -2px; 
     }
 }

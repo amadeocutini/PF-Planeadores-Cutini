@@ -1,3 +1,21 @@
+$breakpoints: (
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px
+);
+
+$font-styles: (
+    // Font Sizes
+    "text": 22px,
+    "title": 70px,
+
+    // Font Weights
+    "700": 700,
+    "600": 600,
+);
+
 $colors: (
     "black": #080B18,
     "aqua": #75bdff,
@@ -11,24 +29,4 @@ $backgrounds: (
     "aqua": #09E5E0,
     "white": #ffffff,
     "black": #000000,
-);
-
-$font-styles: (
-    // Font Sizes
-    "text": 22px,
-    "smaller-title": 60px,
-    "title": 70px,
-
-
-    // Font Weights
-    "700": 700,
-    "600": 600,
-);
-
-$breakpoints: (
-    "sm": 576px,
-    "md": 768px,
-    "lg": 992px,
-    "xl": 1200px,
-    "xxl": 1400px
 );

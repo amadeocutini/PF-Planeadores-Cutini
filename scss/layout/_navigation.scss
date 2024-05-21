@@ -10,19 +10,19 @@
 // Media Queries
 
 @include xxl {
-    .inicio {
+    .inicio-margin {
         margin-left: 73px;
     }
 }
 
 @include xl {
-    .inicio {
+    .inicio-margin {
         margin-left: 89px;
     }
 }
 
 @include lg {
-    .inicio {
+    .inicio-margin {
         margin-left: 67px;
     }
 }

@@ -163,11 +163,11 @@ body {
 /* ARTICLE CONTENT */
 
 .article__body {
-    padding: 25px 0px 115px 105px
+    padding: 25px 0px 115px 105px;
 }
 
 .home .article__fifth .article__body {
-    padding: 25px 100px 115px 100px
+    padding: 25px 100px 115px 100px;
 }
 
 .article__number {
