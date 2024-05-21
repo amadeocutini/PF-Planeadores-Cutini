@@ -29,13 +29,13 @@
 
 // Media Queries
 
-@media (min-width: 1200px) and (max-width: 1399px) {
+@include xl {
     .reservas-navbar-btn {
         margin-right: -25px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include lg {
     .reservas-navbar-btn {
         margin-right: -30px;
     }
