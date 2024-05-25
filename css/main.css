@@ -237,7 +237,7 @@ a {
     width: 90%;
   }
 }
-@media screen and (max-width: 575px) {
+@media (max-width: 576px) {
   .hero-section__btn {
     margin-left: 9.5%;
     width: 80%;
