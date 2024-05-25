@@ -300,6 +300,8 @@
         @include font-styles(default, default, 22.4px, -0.16px);
     }
 
+    // Media Queries
+
     @include md {
         .article__title {
             font-size: 60px;
