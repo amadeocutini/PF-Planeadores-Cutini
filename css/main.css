@@ -303,7 +303,7 @@ a {
 }
 @media (max-width: 1199px) {
   .article__first {
-    background-image: url(../assets/img/bautismos-bg.webp);
+    background-image: url(../assets/img/bautismos-bg.png);
     background-repeat: no-repeat;
     background-position: top right;
   }
@@ -423,7 +423,7 @@ a {
 
 .article__second {
   background-color: #000000;
-  background-image: url(../assets/img/airplane-bg.webp);
+  background-image: url(../assets/img/airplane-bg.png);
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -474,7 +474,7 @@ a {
 .article__third {
   color: #080B18;
   background-color: #09E5E0;
-  background-image: url(../assets/img/clouds-bg.webp);
+  background-image: url(../assets/img/clouds-bg.png);
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -558,7 +558,7 @@ a {
 }
 
 .home .article__fifth {
-  background-image: url(../assets/img/contacto-bg.webp);
+  background-image: url(../assets/img/contacto-bg.png);
   background-repeat: no-repeat;
   background-position: top right;
 }
