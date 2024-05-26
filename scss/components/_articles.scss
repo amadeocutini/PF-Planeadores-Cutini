@@ -50,7 +50,7 @@
 
     // Media Queries
     @media (max-width: 1199px) {
-        @include background-image(url(../assets/img/bautismos-bg.webp), no-repeat, top right);
+        @include background-image(url(../assets/img/bautismos-bg.png), no-repeat, top right);
     }
 
     @media (min-width: 992px) {
@@ -192,7 +192,7 @@
 
 .article__second {
     background-color: map-get($map: $backgrounds, $key: "black");
-    @include background-image(url(../assets/img/airplane-bg.webp), no-repeat, top right);
+    @include background-image(url(../assets/img/airplane-bg.png), no-repeat, top right);
     
     .article__number {
         color: map-get($map: $colors, $key: "gray");
@@ -250,7 +250,7 @@
     
 .article__third {
     @include colors(map-get($map: $colors, $key: "black"), map-get($map: $backgrounds, $key: "aqua"));
-    @include background-image(url(../assets/img/clouds-bg.webp), no-repeat, top right);
+    @include background-image(url(../assets/img/clouds-bg.png), no-repeat, top right);
 
     .article__description {
         color: map-get($map: $colors, $key: "black");
@@ -343,7 +343,7 @@
 }
 
 .home .article__fifth {
-    @include background-image(url(../assets/img/contacto-bg.webp), no-repeat, top right);
+    @include background-image(url(../assets/img/contacto-bg.png), no-repeat, top right);
 
     .article__body {
         @include padding(25px 100px 115px 100px);
